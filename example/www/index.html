@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src * 'unsafe-inline'; media-src *; img-src * data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <title>Key Hash Example</title>
+    </head>
+    <body>
+        <div data-role="page" data-theme="b">
+            <div data-role="header">
+                <h1>Key Hash Example</h1>
+            </div>
+
+            <div role="main" class="ui-content">
+                <form>
+                    <div class="ui-field-contain">
+                        <ul data-inset="true" data-role="listview"></ul>
+                    </div>
+                    <div class="ui-field-contain">
+                        <input disabled id="button-get-key-hashes" type="button" value="Get key hashes" />
+                    </div>
+                    <div class="ui-field-contain">
+                        <input disabled id="button-run-tests" type="button" value="Run tests" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-key-hash"
+    version="0.1.0">
+
+    <name>Key Hash</name>
+    <description>Generate and retrieve application key hashes from signatures</description>
+    <author>Adriano Di Giovanni</author>
+    <keywords>signature,key,hash</keywords>
+    <license>MIT</license>
+
+    <js-module name="getKeyHashes" src="www/index.js">
+        <clobbers target="window.plugins.getKeyHashes" />
+    </js-module>
+
+    <js-module name="tests" src="tests/index.spec.js" />
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="getKeyHashes">
+                <param
+                    name="android-package"
+                    value="com.adrianodigiovanni.keyhash.CDVKeyHash"/>
+            </feature>
+        </config-file>
+        <source-file
+            src="src/android/CDVKeyHash.java"
+            target-dir="src/com/adrianodigiovanni/keyhash" />
+    </platform>
+</plugin>

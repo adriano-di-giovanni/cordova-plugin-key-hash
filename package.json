@@ -1,0 +1,42 @@
+{
+    "name": "cordova-plugin-key-hash",
+    "version": "0.1.0",
+    "description": "Generate and retrieve application key hashes from signatures",
+    "scripts": {
+        "precommit": "lint-staged"
+    },
+    "keywords": ["ecosystem:cordova", "cordova-android", "cordova-ios", "signature", "key", "hash"],
+    "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
+    "license": "MIT",
+    "lint-staged": {
+        "*.js": ["eslint --fix", "git add"],
+        "*.json": ["prettier --write", "git add"]
+    },
+    "devDependencies": {
+        "eslint": "^4.17.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-config-standard": "^11.0.0-beta.0",
+        "eslint-plugin-import": "^2.8.0",
+        "eslint-plugin-node": "^6.0.0",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-promise": "^3.6.0",
+        "eslint-plugin-standard": "^3.0.1",
+        "husky": "^0.14.3",
+        "lint-staged": "^6.1.0",
+        "prettier": "^1.10.2"
+    },
+    "main": "index.js",
+    "directories": {
+        "example": "example",
+        "test": "tests"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/adriano-di-giovanni/cordova-plugin-key-hash.git"
+    },
+    "bugs": {
+        "url": "https://github.com/adriano-di-giovanni/cordova-plugin-key-hash/issues"
+    },
+    "homepage": "https://github.com/adriano-di-giovanni/cordova-plugin-key-hash#readme"
+}
